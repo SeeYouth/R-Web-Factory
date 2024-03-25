@@ -1,15 +1,6 @@
 export const LogoYt = (
-  <svg
-    className="svgBtn"
-    viewBox="0 0 28.57  20"
-    // focusable="false"
-    // style="pointer-events: none; display: block; width: 100%; height: 100%;"
-  >
-    <svg
-      viewBox="0 0 28.57 20"
-      // preserveAspectRatio="xMidYMid meet"
-      // xmlns="http://www.w3.org/2000/svg"
-    >
+  <svg className="svgBtn" viewBox="0 0 28.57  20">
+    <svg viewBox="0 0 28.57 20">
       <g>
         <path
           fill="currentColor"
