@@ -1,1 +1,8 @@
-@import "./components/logoRWF/LogoRwf.scss";
+//prettier-ignore
+@import "./style/reset.scss",
+        "./style/variable.scss",
+        "./style/layout.scss",
+        "./style/flex.scss",
+        "./components/IllustrationBusinessAdviceFromRWebFactory/IllustrationBusinessAdviceFromRWebFactory.scss",
+        "./components/logoRwf/logoRwf.scss",
+        "./components/NavBar/navBar.scss";

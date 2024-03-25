@@ -1,0 +1,27 @@
+//---- WIDTH ----//
+
+nav {
+  width: 100vh;
+}
+
+.socialBar {
+  width: 100%;
+}
+
+//---- HEIGHT ----//
+
+.svgBtn {
+  height: 1em;
+}
+
+//---- BG COLOR ----//
+
+.socialBar {
+  background-color: $secondary-bg-color;
+}
+
+//---- COLOR ----//
+
+.svgBtn {
+  color: $main-link-text-color;
+}
