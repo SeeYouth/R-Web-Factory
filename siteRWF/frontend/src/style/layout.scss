@@ -1,11 +1,7 @@
 //---- WIDTH ----//
 
 nav {
-  width: 100vh;
-}
-
-.socialBar {
-  width: 100%;
+  width: 100vw;
 }
 
 //---- HEIGHT ----//
@@ -24,4 +20,16 @@ nav {
 
 .svgBtn {
   color: $main-link-text-color;
+}
+
+.svgBtn:hover {
+  color: $main-bg-color;
+  cursor: pointer;
+}
+
+//---- TRANSITION ----//
+
+.svgBtn,
+.svgBtn:hover {
+  transition: color 0.2s ease-in-out;
 }
