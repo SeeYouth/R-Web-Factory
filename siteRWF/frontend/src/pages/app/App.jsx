@@ -1,6 +1,10 @@
+// Import Swiper styles
+import "swiper/css";
+
 import React from "react";
 
 import NavBar from "../../components/NavBar/NavBar";
+import Slider from "../../components/Slider/Slider";
 
 const App = () => {
   return (
@@ -8,10 +12,7 @@ const App = () => {
       <NavBar />
       <main>
         <div className="containerSlider">
-          <img
-            src="/src/assets/img/webp/lounge_rural_web_factory.webp"
-            alt="Photo du salon de Rural Web Factory"
-          />
+          <Slider />
         </div>
       </main>
     </div>

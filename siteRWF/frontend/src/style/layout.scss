@@ -34,6 +34,12 @@ body {
   color: $primary-text-color;
 }
 
+.swiperSlideText button,
+.swiperSlideText h2,
+.swiperSlideText h3 {
+  color: $main-link-text-color;
+}
+
 .svgBtn {
   color: $main-link-text-color;
 
