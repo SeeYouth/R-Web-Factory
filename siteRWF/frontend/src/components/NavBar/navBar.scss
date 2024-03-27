@@ -1,7 +1,5 @@
 nav {
-  .socialBar {
-    li {
-      padding: 10px;
-    }
-  }
+  position: relative;
+
+  border-bottom: 3px solid $main-link-text-color;
 }

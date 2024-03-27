@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { FacebookLogo } from "../../assets/img/svg/logoSvg-facebook.jsx";
 import { LinkedInLogo } from "../../assets/img/svg/LinkedIn_icon.jsx";
 import { logoRwf } from "../logoRwf/logoRwf";
@@ -9,7 +11,8 @@ import { YtLogo } from "../../assets/img/svg/YtLogo.jsx";
 const NavBar = () => {
   return (
     <nav>
-      {logoRwf}
+      <Link to="/">{logoRwf}</Link>
+
       <ul className="socialBar">
         <li>
           <p className="svgBtn">Vous avez un projet ?</p>
@@ -19,13 +22,13 @@ const NavBar = () => {
         <li>{LinkedInLogo}</li>
         <li>{YtLogo}</li>
       </ul>
-      <ul>
+      <ul className="navLink">
         <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Nos réalisations</li>
+        <li>Agenda</li>
+        <li>Formations</li>
+        <li>Blog</li>
+        <li>Contact</li>
       </ul>
     </nav>
   );

@@ -1,4 +1,5 @@
 nav,
+.navLink,
 .socialBar {
   display: flex;
 }
@@ -11,6 +12,7 @@ nav {
 
 //---- JUSTIFY CONTENT ----//
 
+.navLink,
 .socialBar {
   justify-content: flex-end;
 }

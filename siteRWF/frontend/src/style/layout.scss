@@ -1,10 +1,18 @@
 //---- WIDTH ----//
 
+.logoRwf {
+  width: 250px;
+}
+
 nav {
   width: 100vw;
 }
 
 //---- HEIGHT ----//
+
+.logoRwf {
+  height: 100px;
+}
 
 .svgBtn {
   height: 1em;
@@ -12,24 +20,49 @@ nav {
 
 //---- BG COLOR ----//
 
+body {
+  background-color: $main-bg-color;
+}
+
 .socialBar {
   background-color: $secondary-bg-color;
 }
 
 //---- COLOR ----//
 
-.svgBtn {
-  color: $main-link-text-color;
+.logoRwf {
+  color: $primary-text-color;
 }
 
-.svgBtn:hover {
-  color: $main-bg-color;
-  cursor: pointer;
+.svgBtn {
+  color: $main-link-text-color;
+
+  &:hover {
+    color: $main-link-text-color-hover;
+    cursor: pointer;
+  }
+}
+
+.navLink li {
+  color: $primary-text-color;
+
+  &:hover {
+    color: $main-link-text-color;
+    cursor: pointer;
+  }
 }
 
 //---- TRANSITION ----//
 
-.svgBtn,
-.svgBtn:hover {
-  transition: color 0.2s ease-in-out;
+.navLink li,
+.svgBtn {
+  &:hover {
+    transition: color 0.2s ease-in-out;
+  }
+}
+
+.navLink li {
+  &:hover {
+    transition: background-color 0.2s ease-in-out;
+  }
 }
