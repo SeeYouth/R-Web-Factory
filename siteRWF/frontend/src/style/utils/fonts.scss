@@ -36,13 +36,16 @@ body,
 //---- FONT SIZE ----//
 
 .swiperSlideText h2 {
-  font-size: 6rem;
+  // font-size: 6em;
+  font-size: calc(3vw + 3vh);
 }
 
 .swiperSlideText h3 {
-  font-size: 3rem;
+  font-size: calc(2vw + 2vh);
+  // font-size: 3em;
 }
 
 .swiperSlideText button {
-  font-size: 2rem;
+  font-size: calc(1.2vw + 1.2vh);
+  // font-size: 2em;
 }

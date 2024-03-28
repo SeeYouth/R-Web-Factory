@@ -1,12 +1,19 @@
 //prettier-ignore
 @import "./style/utils/reset.scss",
         "./style/utils/variable.scss",
+        "./style/utils/animation.scss",
         "./style/utils/flex.scss",
         "./style/utils/fonts.scss",
+        "./style/utils/margin.scss",
         "./style/utils/padding.scss";
+
 //prettier-ignore
-@import "./style/components/logoRwf.scss", 
+@import "./style/components/dataIconSvg.scss",
+        "./style/components/gear.scss",
+        "./style/components/logoRwf.scss", 
         "./style/components/navBar.scss",
+        "./style/components/skillApp.scss",
         "./style/components/slider.scss";
+
 //prettier-ignore
 @import "./style/layout/layout.scss";

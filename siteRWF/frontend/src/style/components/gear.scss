@@ -1,0 +1,27 @@
+.gearColor {
+  animation: rotate 5.18s linear infinite reverse;
+}
+
+.gearColor2 {
+  color: red;
+  animation: rotate 6.5s linear infinite;
+}
+
+.gearColor3 {
+  animation: rotate 6.89s linear infinite reverse;
+}
+
+.translateGearColor {
+  transform: translate(7%, -1%);
+  //86.3713150024414
+}
+
+.translateGearColor2 {
+  transform: translate(0, -3%);
+  //122
+}
+
+.translateGearColor3 {
+  transform: translate(-0.8%, 2%);
+  //111
+}

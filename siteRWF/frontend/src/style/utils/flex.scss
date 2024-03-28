@@ -1,12 +1,19 @@
 nav,
 .navLink,
-.socialBar {
+.skillContainer,
+.socialBar,
+.swiper-button-prev,
+.swiper-button-next,
+.swiperSlideText {
   display: flex;
 }
 
 //---- FLEX DIRECTION ----//
 
-nav {
+nav,
+.swiper-button-prev,
+.swiper-button-next,
+.swiperSlideText {
   flex-direction: column;
 }
 
@@ -15,4 +22,27 @@ nav {
 .navLink,
 .socialBar {
   justify-content: flex-end;
+}
+
+.swiperSlideText {
+  justify-content: space-around;
+}
+
+//---- ALIGN ITEMS ----//
+
+.swiperSlideText {
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    justify-content: flex-end !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    justify-content: center !important;
+  }
 }
