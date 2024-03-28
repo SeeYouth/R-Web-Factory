@@ -11,9 +11,24 @@ const App = () => {
     <div>
       <NavBar />
       <main>
-        <div className="containerSlider">
+        <section className="containerSlider">
           <Slider />
-        </div>
+        </section>
+        <section>
+          <p>
+            <span>Vos projet web</span>
+            sur mesure et 100% français !
+          </p>
+        </section>
+        <section>
+          <h2>Notre expérience au service de vos projets web</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
       </main>
     </div>
   );
