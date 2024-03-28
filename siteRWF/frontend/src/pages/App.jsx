@@ -3,17 +3,16 @@ import "swiper/css";
 
 import React from "react";
 
-import NavBar from "../../components/NavBar/NavBar";
-import Slider from "../../components/Slider/Slider";
+import { dataIcon } from "../assets/img/svg/dataIcon";
+import NavBar from "../components/NavBar";
+import Slider from "../components/Slider";
 
 const App = () => {
   return (
     <div>
       <NavBar />
       <main>
-        <section className="containerSlider">
-          <Slider />
-        </section>
+        <Slider />
         <section>
           <p>
             <span>Vos projet web</span>
@@ -22,8 +21,15 @@ const App = () => {
         </section>
         <section>
           <h2>Notre expérience au service de vos projets web</h2>
-          <ul>
-            <li></li>
+          <ul className="skillContainer">
+            <li className="skill">
+              {dataIcon}
+              <h4>hébergement</h4>
+              <p>
+                Notre savoir-faire en hébergement nous permet de conseiller nos
+                clients et concevoir des projets à fort trafic.
+              </p>
+            </li>
             <li></li>
             <li></li>
             <li></li>

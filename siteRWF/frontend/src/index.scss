@@ -1,11 +1,12 @@
 //prettier-ignore
-@import "./style/reset.scss",
-        "./style/fonts.scss",
-        "./style/variable.scss",
-        "./style/layout.scss",
-        "./style/flex.scss",
-        "./style/padding.scss",
-        "./components/IllustrationBusinessAdviceFromRWebFactory/IllustrationBusinessAdviceFromRWebFactory.scss",
-        "./components/logoRwf/logoRwf.scss",
-        "./components/NavBar/navBar.scss",
-        "./components/Slider/slider.scss";
+@import "./style/utils/reset.scss",
+        "./style/utils/variable.scss",
+        "./style/utils/flex.scss",
+        "./style/utils/fonts.scss",
+        "./style/utils/padding.scss";
+//prettier-ignore
+@import "./style/components/logoRwf.scss", 
+        "./style/components/navBar.scss",
+        "./style/components/slider.scss";
+//prettier-ignore
+@import "./style/layout/layout.scss";

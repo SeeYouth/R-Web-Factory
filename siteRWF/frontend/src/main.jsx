@@ -5,7 +5,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
-import App from "./pages/app/App";
+import App from "./pages/App";
 
 const router = createBrowserRouter([
   {
