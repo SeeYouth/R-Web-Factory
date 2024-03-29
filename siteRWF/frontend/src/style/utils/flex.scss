@@ -1,9 +1,11 @@
+.containerSvg,
 nav,
 .navLink,
+.skill,
 .skillContainer,
 .socialBar,
-.swiper-button-prev,
 .swiper-button-next,
+.swiper-button-prev,
 .swiperSlideText {
   display: flex;
 }
@@ -11,13 +13,18 @@ nav,
 //---- FLEX DIRECTION ----//
 
 nav,
-.swiper-button-prev,
+.skill,
 .swiper-button-next,
+.swiper-button-prev,
 .swiperSlideText {
   flex-direction: column;
 }
 
 //---- JUSTIFY CONTENT ----//
+
+.containerSvg {
+  justify-content: center;
+}
 
 .navLink,
 .socialBar {
@@ -30,19 +37,23 @@ nav,
 
 //---- ALIGN ITEMS ----//
 
+.containerSvg,
+.skill,
 .swiperSlideText {
   align-items: center;
 }
 
+//---- MEDIA QUERIES ----//
+
 @media screen and (max-width: 1024px) {
-  .swiper-button-prev,
-  .swiper-button-next {
+  .swiper-button-next,
+  .swiper-button-prev {
     justify-content: flex-end !important;
   }
 }
 @media screen and (min-width: 1025px) {
-  .swiper-button-prev,
-  .swiper-button-next {
+  .swiper-button-next,
+  .swiper-button-prev {
     justify-content: center !important;
   }
 }

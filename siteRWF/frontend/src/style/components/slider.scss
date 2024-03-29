@@ -22,6 +22,7 @@
       height: 15px;
       margin: 5px;
       gap: 5px;
+      background-color: $main-link-text-color-2;
     }
 
     .swiper-pagination-bullet-active {
@@ -50,7 +51,7 @@
           transition: color 0.2s ease-out, background-color 0.2s ease-out;
           background-color: $main-link-text-color;
           cursor: pointer;
-          color: black;
+          color: $secondary-bg-color;
         }
       }
     }

@@ -1,3 +1,43 @@
-.skillContainer {
-  border: 1px solid black;
+.infoRwf {
+  h2 {
+    background-color: $secondary-bg-color;
+    color: $main-link-text-color-hover;
+    margin-bottom: -30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .skillContainer {
+    border: 2px solid $secondary-bg-color;
+    padding: 30px 50px;
+
+    .containerSvg {
+      margin-bottom: 20px;
+    }
+
+    p {
+      display: inline-block;
+      height: 100px;
+    }
+
+    button {
+      background-color: $secondary-bg-color;
+      border: 3px solid $main-link-text-color;
+      padding: 15px 40px;
+      color: $main-link-text-color;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+      &:hover {
+        transition: background-color 0.2s ease-out, color 0.2s ease-out;
+        background-color: $main-link-text-color;
+        color: $secondary-bg-color;
+        cursor: pointer;
+      }
+    }
+  }
 }

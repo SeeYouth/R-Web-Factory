@@ -7,6 +7,13 @@ const Gear = () => {
     gear3: "",
   });
 
+  const [dataTimeRotateGear, setDataTimeRotateGear] = useState({
+    timeRotateGear: 5,
+    numberTeethGear: 7,
+    numberTeethGear2: 9,
+    numberTeethGear3: 10,
+  });
+
   useEffect(() => {
     const calcCenter = () => {
       const gearClasses = ["gear", "gear2", "gear3"];
@@ -20,32 +27,36 @@ const Gear = () => {
         const bbox = svgElement.getBBox();
         const x_center = bbox.x + bbox.width / 2;
         const y_center = bbox.y + bbox.height / 2;
-        console.log(`Centre de l'élément : (${x_center}, ${y_center})`);
 
         center[gearClass] = `${x_center}px ${y_center}px`;
       });
       setGearStyleAnimation(center);
     };
     calcCenter();
+
+    const calcTimeRotateGear = () => {
+      const gearArray = [
+        dataTimeRotateGear.numberTeethGear,
+        dataTimeRotateGear.numberTeethGear3,
+      ];
+
+      const dataTimeRotateAllGear = {};
+
+      // Liste la totalité des engranages déclarés
+      // Calcule le temps de rotation de chaque engrenage
+      // en prenant en compte le nombre de dents
+      gearArray.forEach((gear, index) => {
+        const ratioRotateTime = gear / dataTimeRotateGear.numberTeethGear2;
+        const timeRotateAllGear =
+          ratioRotateTime * dataTimeRotateGear.timeRotateGear + "s";
+        dataTimeRotateAllGear[`gear${index + 1}`] = timeRotateAllGear;
+      });
+      setDataTimeRotateGear(dataTimeRotateAllGear);
+    };
+    calcTimeRotateGear();
   }, []);
 
-  // Temps => T => let t = 10
-  // gear2 => let R =
-  // autre gear => r
-  // T x (R/r)
-
-  let timeRotateGear = 5;
-  let numberTeethGreatGear = 9;
-  let numberTeethLittleGear = 7;
-  let numberTeethMediumGear = 10;
-
-  let ratioMedGre = numberTeethMediumGear / numberTeethGreatGear;
-  let ratioLittGre = numberTeethLittleGear / numberTeethGreatGear;
-
-  let timeRotateMediumGear = timeRotateGear * ratioMedGre + "s";
-  let timeRotateLittleGear = timeRotateGear * ratioLittGre + "s";
-
-  console.log("Log useState gearStyleAnimation :", gearStyleAnimation);
+  const timeRotateGreatGear = dataTimeRotateGear.timeRotateGear + "s";
 
   return (
     <svg className="svgGear" viewBox="0 0 477.93 415">
@@ -55,11 +66,10 @@ const Gear = () => {
             className="gear"
             style={{
               transformOrigin: gearStyleAnimation.gear,
-              animation: `rotate ${timeRotateLittleGear} linear infinite reverse`,
+              animation: `rotate ${dataTimeRotateGear.gear1} linear infinite reverse`,
             }}
           >
             <path
-              id="yourPathElementId"
               className="gearColor"
               d="M86.44,205.75l-5-.45a87.1,87.1,0,0,1-26.85-6.93l-4.6-2,2.41-19.53a69.89,69.89,0,0,1-14.19-12l-18.85,5.62-2.75-4.2A86.35,86.35,0,0,1,5.32,141L4,136.11l16.75-10.3a69,69,0,0,1,.53-18.55L5.16,96l1.57-4.77A86.46,86.46,0,0,1,19.5,66.64l3-4L41,69.3A68,68,0,0,1,55.8,58.14L54.52,38.51l4.7-1.75a87.45,87.45,0,0,1,27.18-5.4l5-.18,6.3,18.64a68.91,68.91,0,0,1,18,4.63l14.54-13.23,4.3,2.59a87.47,87.47,0,0,1,21.15,17.88L159,65.5,148.35,82.05a68.52,68.52,0,0,1,7.58,17l19.42,3.12.65,5a87.62,87.62,0,0,1-.79,27.7l-.93,4.93-19.58,2a68.42,68.42,0,0,1-8.53,16.48l9.66,17.12L152.36,179a86.74,86.74,0,0,1-22.15,16.68L125.78,198,112,183.91a68.84,68.84,0,0,1-18.21,3.62ZM64.61,187.88a74.14,74.14,0,0,0,13.16,3.39l6.89-17.1,4.57,0a56.63,56.63,0,0,0,21.9-4.35l4.21-1.76,12.91,13.18a73,73,0,0,0,10.85-8.17L130,157l2.87-3.55a55.23,55.23,0,0,0,10.25-19.8l1.24-4.4,18.36-1.88a75.16,75.16,0,0,0,.39-13.58l-18.22-2.92-1-4.47A55.09,55.09,0,0,0,134.84,86l-2.67-3.71,10-15.51q-2.4-2.46-5-4.63c-1.73-1.45-3.53-2.84-5.41-4.15L118.13,70.46l-4.1-2a55.13,55.13,0,0,0-21.61-5.56l-4.57-.24L81.94,45.16a74.2,74.2,0,0,0-13.33,2.65l1.21,18.4-4.13,2A55.64,55.64,0,0,0,47.87,81.58l-3,3.44L27.48,78.74a73.24,73.24,0,0,0-6.25,12.05l15.14,10.54-1,4.45a55.36,55.36,0,0,0-.64,22.31l.78,4.5-15.71,9.66a72.36,72.36,0,0,0,5.53,12.39L43,149.38,45.8,153A54.62,54.62,0,0,0,53.61,161a55.44,55.44,0,0,0,9.25,6.36l4,2.2Z"
             />
@@ -71,6 +81,7 @@ const Gear = () => {
             className="gear2"
             style={{
               transformOrigin: gearStyleAnimation.gear2,
+              animation: `rotate ${timeRotateGreatGear} linear infinite`,
             }}
           >
             <path
@@ -85,7 +96,7 @@ const Gear = () => {
             className="gear3"
             style={{
               transformOrigin: gearStyleAnimation.gear3,
-              animation: `rotate ${timeRotateMediumGear} linear infinite reverse`,
+              animation: `rotate ${dataTimeRotateGear.gear2} linear infinite reverse`,
             }}
           >
             <path

@@ -23,8 +23,6 @@ const Slider = () => {
         spaceBetween={0}
         slidesPerView={1}
         autoplay={{ delay: 5000 }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <div className="swiperSlideText">

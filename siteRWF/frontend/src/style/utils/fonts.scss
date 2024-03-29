@@ -1,8 +1,12 @@
+//----------------------------//
+//----------- FONT -----------//
+//----------------------------//
+
 @font-face {
-  font-family: "orbitron regular";
-  src: url("/src/assets/fonts/Orbitron-Regular.woff") format("woff"),
-    url("/src/assets/fonts/orbitron-regular.woff2") format("woff2"),
-    url("/src/assets/fonts/Orbitron-Regular.ttf") format("truetype");
+  font-family: "poppins regular";
+  src: url("/src/assets/fonts/poppins-regular-webfont.woff") format("woff"),
+    url("/src/assets/fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("/src/assets/fonts/poppins-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,15 +20,9 @@
 
 //---- FONT FAMILY ----//
 
-body {
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-
 body,
 .swiperSlideText button {
-  font-family: "orbitron regular", sans-serif;
-  font-weight: bold;
+  font-family: "poppins regular", sans-serif;
 }
 
 .swiperSlideText h2,
@@ -35,17 +33,45 @@ body,
 
 //---- FONT SIZE ----//
 
+body {
+  font-size: 14px;
+}
+
 .swiperSlideText h2 {
-  // font-size: 6em;
   font-size: calc(3vw + 3vh);
 }
 
 .swiperSlideText h3 {
   font-size: calc(2vw + 2vh);
-  // font-size: 3em;
 }
 
 .swiperSlideText button {
   font-size: calc(1.2vw + 1.2vh);
-  // font-size: 2em;
+}
+
+.skill h4 {
+  font-size: 1.2em;
+}
+
+//---- FONT WEIGHT ----//
+
+.skill h4,
+.skill button {
+  font-weight: bold;
+}
+
+//----------------------------//
+//----------- TEXT -----------//
+//----------------------------//
+
+//---- TEXT ALIGN ----//
+
+.skill p {
+  text-align: center;
+}
+
+//---- TEXT TRANSFORM ----//
+
+.skill h4 {
+  text-transform: uppercase;
 }
