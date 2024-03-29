@@ -7,32 +7,24 @@ const Gear = () => {
     gear3: "",
   });
 
-  const [dataGearTimeRotate, setDataGearTimeRotate] = useState({
-    gearTime: "",
-    gearTime3: "",
-  });
-
   useEffect(() => {
     const calcCenter = () => {
       const gearClasses = ["gear", "gear2", "gear3"];
 
-      const animationStyle = {};
+      const center = {};
 
+      // liste la totalité des engrenages
+      // Récupère le centre de chacun d'entre à partir de leur box
       gearClasses.forEach((gearClass) => {
         const svgElement = document.querySelector(`.${gearClass}`);
         const bbox = svgElement.getBBox();
         const x_center = bbox.x + bbox.width / 2;
         const y_center = bbox.y + bbox.height / 2;
-        const approxRadius = Math.min(bbox.width, bbox.height) / 2;
         console.log(`Centre de l'élément : (${x_center}, ${y_center})`);
-        console.log(approxRadius);
 
-        animationStyle[gearClass] = {
-          center: `${x_center}px ${y_center}px`,
-          radius: approxRadius,
-        };
+        center[gearClass] = `${x_center}px ${y_center}px`;
       });
-      setGearStyleAnimation(animationStyle);
+      setGearStyleAnimation(center);
     };
     calcCenter();
   }, []);
@@ -43,17 +35,15 @@ const Gear = () => {
   // T x (R/r)
 
   let timeRotateGear = 5;
-  let greatGear = gearStyleAnimation.gear2.radius;
-  let mediumGear = gearStyleAnimation.gear3.radius;
-  let littleGear = gearStyleAnimation.gear.radius;
+  let numberTeethGreatGear = 9;
+  let numberTeethLittleGear = 7;
+  let numberTeethMediumGear = 10;
 
-  let timeRotateMediumGear = timeRotateGear * (mediumGear / greatGear) + "s";
-  let timeRotateLittleGear = timeRotateGear * (littleGear / greatGear) + "s";
-  console.log(
-    "calcul ratio mediumGear :",
-    timeRotateGear * (greatGear / mediumGear)
-  );
-  console.log("calcul ratio littleGear :");
+  let ratioMedGre = numberTeethMediumGear / numberTeethGreatGear;
+  let ratioLittGre = numberTeethLittleGear / numberTeethGreatGear;
+
+  let timeRotateMediumGear = timeRotateGear * ratioMedGre + "s";
+  let timeRotateLittleGear = timeRotateGear * ratioLittGre + "s";
 
   console.log("Log useState gearStyleAnimation :", gearStyleAnimation);
 
@@ -64,7 +54,7 @@ const Gear = () => {
           <g
             className="gear"
             style={{
-              transformOrigin: gearStyleAnimation.gear.center,
+              transformOrigin: gearStyleAnimation.gear,
               animation: `rotate ${timeRotateLittleGear} linear infinite reverse`,
             }}
           >
@@ -80,7 +70,7 @@ const Gear = () => {
           <g
             className="gear2"
             style={{
-              transformOrigin: gearStyleAnimation.gear2.center,
+              transformOrigin: gearStyleAnimation.gear2,
             }}
           >
             <path
@@ -94,7 +84,7 @@ const Gear = () => {
           <g
             className="gear3"
             style={{
-              transformOrigin: gearStyleAnimation.gear3.center,
+              transformOrigin: gearStyleAnimation.gear3,
               animation: `rotate ${timeRotateMediumGear} linear infinite reverse`,
             }}
           >
