@@ -1,4 +1,6 @@
+.containerFooter,
 .containerSvg,
+.listLinkFooter,
 nav,
 .navLink,
 .skill,
@@ -12,6 +14,7 @@ nav,
 
 //---- FLEX DIRECTION ----//
 
+.listLinkFooter,
 nav,
 .skill,
 .swiper-button-next,
@@ -31,6 +34,8 @@ nav,
   justify-content: flex-end;
 }
 
+.containerFooter,
+.listLinkFooter,
 .swiperSlideText {
   justify-content: space-around;
 }

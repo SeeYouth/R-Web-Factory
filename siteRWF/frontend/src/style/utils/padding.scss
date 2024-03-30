@@ -1,5 +1,6 @@
 //---- PADDING ----//
 
+.listLinkFooter li,
 .svgBtn {
   padding: 5px 10px;
 }
@@ -12,6 +13,7 @@
   padding: 10px;
 }
 
+footer,
 .svgGear {
   padding: 20px;
 }
@@ -24,4 +26,8 @@
 
 .socialBar {
   padding-right: 20px;
+}
+
+.containerFooter h2 {
+  padding-bottom: 10px;
 }

@@ -2,6 +2,8 @@
 //----------- FONT -----------//
 //----------------------------//
 
+//---- FONT FACE ----//
+
 @font-face {
   font-family: "poppins regular";
   src: url("/src/assets/fonts/poppins-regular-webfont.woff") format("woff"),
@@ -67,12 +69,14 @@ body {
 
 //---- TEXT ALIGN ----//
 
+.containerFooter h2,
 .skill p {
   text-align: center;
 }
 
 //---- TEXT TRANSFORM ----//
 
+.containerFooter h2,
 .skill h4 {
   text-transform: uppercase;
 }

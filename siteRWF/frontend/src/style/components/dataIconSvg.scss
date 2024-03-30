@@ -1,6 +1,13 @@
 .dataIconSvg {
   height: 140px;
-  .colorPoint {
+  .colorLine {
     color: $main-link-text-color;
+  }
+}
+
+@for $i from 1 to $elt-number {
+  .colorPoint#{$i} {
+    animation: changeColor $animation-duration * $elt-number ease-out infinite;
+    animation-delay: $offset * ($i - 1);
   }
 }

@@ -1,3 +1,80 @@
+//---- BG COLOR ----//
+
+body {
+  background-color: $main-bg-color;
+}
+
+footer,
+.socialBar {
+  background-color: $secondary-bg-color;
+}
+
+//---- COLOR ----//
+
+.blue {
+  color: $firstColorFlag;
+}
+
+.red {
+  color: $secondColorFlag;
+}
+
+.logoRwf,
+.navLink li {
+  color: $primary-text-color;
+}
+
+.swiperSlideText button,
+.swiperSlideText h2,
+.swiperSlideText h3 {
+  color: $main-link-text-color;
+}
+
+footer,
+.listLinkFooter li:hover,
+.svgBtn:hover {
+  color: $main-link-text-color-hover;
+}
+
+.listLinkFooter li,
+.navLink li:hover,
+.svgBtn {
+  color: $main-link-text-color;
+}
+
+//---- CURSOR ----//
+
+.listLinkFooter li:hover,
+.navLink li:hover,
+.svgBtn:hover {
+  cursor: pointer;
+}
+
+//---- HEIGHT ----//
+
+.logoRwf {
+  height: 100px;
+}
+
+.containerSvg {
+  height: 150px;
+}
+
+.svgBtn {
+  height: 1em;
+}
+
+//---- TRANSITION ----//
+
+.listLinkFooter li,
+.navLink li,
+.svgBtn {
+  transition: color 0.5s ease-in-out;
+  &:hover {
+    transition: color 0.2s ease-in-out;
+  }
+}
+
 //---- WIDTH ----//
 
 nav,
@@ -17,83 +94,7 @@ nav,
   width: 250px;
 }
 
+.containerFooter,
 .infoRwf {
   max-width: 1024px;
-}
-
-//---- HEIGHT ----//
-
-.logoRwf {
-  height: 100px;
-}
-
-.containerSvg {
-  height: 150px;
-}
-
-.svgBtn {
-  height: 1em;
-}
-
-//---- BG COLOR ----//
-
-body {
-  background-color: $main-bg-color;
-}
-
-.socialBar {
-  background-color: $secondary-bg-color;
-}
-
-//---- COLOR ----//
-
-.blue {
-  color: $firstColorFlag;
-}
-
-.red {
-  color: $secondColorFlag;
-}
-
-.logoRwf {
-  color: $primary-text-color;
-}
-
-.swiperSlideText button,
-.swiperSlideText h2,
-.swiperSlideText h3 {
-  color: $main-link-text-color;
-}
-
-.svgBtn {
-  color: $main-link-text-color;
-
-  &:hover {
-    color: $main-link-text-color-hover;
-    cursor: pointer;
-  }
-}
-
-.navLink li {
-  color: $primary-text-color;
-
-  &:hover {
-    color: $main-link-text-color;
-    cursor: pointer;
-  }
-}
-
-//---- TRANSITION ----//
-
-.navLink li,
-.svgBtn {
-  &:hover {
-    transition: color 0.2s ease-in-out;
-  }
-}
-
-.navLink li {
-  &:hover {
-    transition: background-color 0.2s ease-in-out;
-  }
 }

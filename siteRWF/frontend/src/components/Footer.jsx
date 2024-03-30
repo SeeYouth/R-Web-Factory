@@ -3,10 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div className="containerFooter">
         <div>
           <h2>Rural Web Factory</h2>
-          <ul>
+          <ul className="listLinkFooter">
             <li>Agence de communication digital</li>
             <li>contact@agence-rwf.fr</li>
             <li>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div>
           <h2>La création de site internet</h2>
-          <ul>
+          <ul className="listLinkFooter">
             <li>Gestion de projet</li>
             <li>Webdesign</li>
             <li>Identité visuelle</li>
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <div>
           <h2>domaines d'activité</h2>
-          <ul>
+          <ul className="listLinkFooter">
             <li>Création de site e.commerce</li>
             <li>Création de site institutionnel</li>
             <li>Création de site vitrine</li>
@@ -52,16 +52,16 @@ const Footer = () => {
             <li>Interfacage</li>
           </ul>
         </div>
-      </div>
-      <div>
-        <ul>
-          <li>Rural Web Factory</li>
-          <li>Devis en ligne</li>
-          <li>Contact</li>
-          <li>Mentions légales</li>
-          <li>Condition générales d'utilisation</li>
-          <li>Politique de confidentialité</li>
-        </ul>
+        <div>
+          <h2>Information complémentaire</h2>
+          <ul className="listLinkFooter">
+            <li>Devis en ligne</li>
+            <li>Contact</li>
+            <li>Mentions légales</li>
+            <li>Condition générales d'utilisation</li>
+            <li>Politique de confidentialité</li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

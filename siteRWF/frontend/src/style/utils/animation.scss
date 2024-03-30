@@ -10,7 +10,7 @@
 @keyframes changeColor {
   0%,
   100% {
-    stroke: black;
+    stroke: $primary-text-color;
 
     color: $primary-text-color;
   }
