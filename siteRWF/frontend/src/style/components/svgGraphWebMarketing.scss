@@ -1,0 +1,17 @@
+.cls-1 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 40px;
+}
+
+.cls-1,
+.line {
+  fill: currentColor;
+}
+
+@for $i from 1 to $elt-number {
+  .part#{$i} {
+    animation: opacity $animation-duration * $elt-number ease-out infinite;
+    animation-delay: $offset * ($i - 1);
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 
 import Gear from "../assets/img/svg/gear";
 import SvgDataIcon from "../assets/img/svg/SvgDataIcon";
+import SvgGraphWebMarketing from "../assets/img/svg/SvgGraphWebMarketing";
 import SvgPenTools from "../assets/img/svg/SvgPenTools";
 
 const InfoRwf = () => {
@@ -44,7 +45,7 @@ const InfoRwf = () => {
         </li>
         <li className="skill">
           <div className="containerSvg">
-            <SvgDataIcon />
+            <SvgGraphWebMarketing />
           </div>
           <h4>web marketing</h4>
           <p>

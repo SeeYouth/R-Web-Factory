@@ -6,3 +6,17 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes opacity {
+  0%,
+  100% {
+    stroke: black;
+
+    color: $primary-text-color;
+  }
+  50% {
+    stroke: $main-link-text-color;
+
+    color: $main-link-text-color;
+  }
+}
