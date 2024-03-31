@@ -1,24 +1,45 @@
 import React from "react";
 
+import {
+  numberContactDevelopment,
+  numberContactWebDesign,
+  textContactDevelopment,
+  textContactWebDesign,
+  textRwf,
+  textRwfAgenceCom,
+  textRwfEmail,
+} from "../assets/utils/variable";
+
 const Footer = () => {
   return (
     <footer>
       <div className="containerFooter">
         <div>
-          <h2>Rural Web Factory</h2>
+          <h2>{textRwf}</h2>
           <ul className="listLinkFooter">
-            <li>Agence de communication digital</li>
-            <li>contact@agence-rwf.fr</li>
+            <li>{textRwfAgenceCom}</li>
+            <li> {textRwfEmail} </li>
             <li>
               <div>
-                <p>Contact webdesign</p>
-                <p>06 81 78 50 86</p>
+                <p> {textContactWebDesign} </p>
+                <p>
+                  <a href={`tel:${numberContactWebDesign}`}>
+                    {" "}
+                    {numberContactWebDesign}{" "}
+                  </a>
+                </p>
               </div>
             </li>
             <li>
               <div>
-                <p>Contact développement</p>
-                <p>06 82 79 51 87</p>
+                <p> {textContactDevelopment} </p>
+                <p>
+                  {" "}
+                  <a href={`tel:${numberContactDevelopment}`}>
+                    {" "}
+                    {numberContactDevelopment}{" "}
+                  </a>
+                </p>
               </div>
             </li>
           </ul>
