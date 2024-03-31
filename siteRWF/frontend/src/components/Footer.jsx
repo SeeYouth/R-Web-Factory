@@ -3,11 +3,11 @@ import React from "react";
 import {
   numberContactDevelopment,
   numberContactWebDesign,
+  tagRwfEmail,
   textContactDevelopment,
   textContactWebDesign,
   textRwf,
   textRwfAgenceCom,
-  textRwfEmail,
 } from "../assets/utils/variable";
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
           <h2>{textRwf}</h2>
           <ul className="listLinkFooter">
             <li>{textRwfAgenceCom}</li>
-            <li> {textRwfEmail} </li>
+            <li> {tagRwfEmail} </li>
             <li>
               <div>
                 <p> {textContactWebDesign} </p>
@@ -70,7 +70,7 @@ const Footer = () => {
             <li>Responsive design</li>
             <li>Création de site avec CMS</li>
             <li>Paiement en ligne</li>
-            <li>Interfacage</li>
+            <li>Interfaçage</li>
           </ul>
         </div>
         <div>
