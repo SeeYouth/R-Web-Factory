@@ -1,3 +1,7 @@
+//------------------------//
+//-------- FOOTER --------//
+//------------------------//
+
 //---- EMAIL ----//
 export const textRwfEmail             = "contact@agence-rwf.fr"
 
@@ -17,33 +21,6 @@ export const textRwf                  = "Rural Web Factory"
 export const createWebsite            = "La création de site internet";
 export const fieldActivity            = "Domaines d'activité";
 export const additionalInformation    = "Information complémentaire";
-
-export const arrayH2ContactFooter     = [
-                                          textRwf,
-                                          createWebsite,
-                                          fieldActivity,
-                                          additionalInformation
-                                        ]
-
-//---- ARRAY CONTACT ----//
-export const arrayPhoneContactFooter  = [
-                                          numberContactWebDesign,
-                                          numberContactDevelopment
-                                        ]
-
-
-export const arrayLiContactFooter     = [
-                                          textRwfAgenceCom,
-                                          tagRwfEmail,
-                                          textContactWebDesign,
-                                          textContactDevelopment
-                                        ]
-
-export const arrayContactfooter       = [
-                                          arrayH2ContactFooter,
-                                          arrayPhoneContactFooter,
-                                          arrayLiContactFooter
-                                        ]
 
 //---- CREATE WEBSITE ----//
 
@@ -95,16 +72,32 @@ export const arrayFieldActivity       = [
 
 //---- ADDITIONAL INFORMATION ----//
 
-export const linkAddInfoOnlineQuote    = "Devis en ligne"
 export const linkAddInfoContact        = "Contact"
 export const linkAddInfoLegalNotice    = "Mentions légales"
 export const linkAddInfoTCU            = "Conditions générales d'utilisation"
 export const linkAddInfoPrivacy        = "Politique de confidentialité"
 
 export const arrayAddInfo              = [
-                                          linkAddInfoOnlineQuote,
                                           linkAddInfoContact,
                                           linkAddInfoLegalNotice,
                                           linkAddInfoTCU,
                                           linkAddInfoPrivacy
                                         ]
+
+//---- ARRAY LIST LI AND LINK ----//
+
+export const arrayInterest             = [
+                                          {
+                                            title: createWebsite,
+                                            array: arrayLiCreateWebsite
+                                          },
+                                          {
+                                            title: fieldActivity,
+                                            array: arrayFieldActivity
+                                          },
+                                          {
+                                            title: additionalInformation,
+                                            array: arrayAddInfo
+                                          }
+                                        ]
+
