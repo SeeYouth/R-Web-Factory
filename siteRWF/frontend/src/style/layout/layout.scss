@@ -9,6 +9,11 @@ footer,
   background-color: $secondary-bg-color;
 }
 
+.textItemReal,
+.textItemReal a {
+  background-color: $secondary-bg-color-trans;
+}
+
 //---- COLOR ----//
 
 .blue {
@@ -33,13 +38,15 @@ footer,
 footer,
 .listLinkFooter li,
 .listLinkFooter a:hover,
-.svgBtn:hover {
+.svgBtn:hover,
+.textItemReal {
   color: $main-link-text-color-hover;
 }
 
 .listLinkFooter a,
 .navLink li:hover,
-.svgBtn {
+.svgBtn,
+.textItemReal a {
   color: $main-link-text-color;
 }
 
@@ -52,12 +59,22 @@ footer,
 
 //---- HEIGHT ----//
 
+.containerItemReal img,
+.listContainerItemReal img,
+.textItemReal {
+  height: 100%;
+}
+
 .logoRwf {
   height: 100px;
 }
 
 .containerSvg {
   height: 150px;
+}
+
+.listContainerItemReal {
+  height: 200px;
 }
 
 .svgBtn {
@@ -77,13 +94,29 @@ footer,
 
 //---- WIDTH ----//
 
+.containerItemReal img,
+.listContainerItemReal img,
+.textItemReal {
+  width: 100%;
+}
+
+.containerRealization,
 nav,
-.infoRwf {
+.infoRwf,
+.titleRealization {
   width: 100vw;
+}
+
+.textItemReal a {
+  width: 100px;
 }
 
 .containerSvg {
   width: 150px;
+}
+
+.listContainerItemReal {
+  width: 250px;
 }
 
 .skill {
@@ -95,6 +128,8 @@ nav,
 }
 
 .containerFooter,
-.infoRwf {
+.containerRealization,
+.infoRwf,
+.titleRealization {
   max-width: 1024px;
 }

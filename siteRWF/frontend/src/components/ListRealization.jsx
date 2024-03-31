@@ -1,22 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { arrayWebSiteRealization } from "../assets/utils/variableRealization";
 
 const ListRealization = () => {
+  const [selectedCategoryRadio, setSelectedCategoryRadio] = useState("");
+  const category = [
+    "Blog",
+    "E-commerce",
+    "Institutionnel",
+    "Site Catalogue",
+    "Site Vitrine",
+  ];
+
+  const checkboxChange = (checkboxId) => {
+    setSelectedCategoryRadio((selected) =>
+      selected === checkboxId ? "" : checkboxId
+    );
+  };
+
   return (
-    <div>
-      {arrayWebSiteRealization.map((realization) => (
-        <div className="containerRealization" key={realization.id}>
-          <div className="containerTextItemRealization">
-            <h3> {realization.title} </h3>
-            <p> {realization.description} </p>
-            <a className="btnRealization" href={realization.webSite}>
-              Visiter le site
-            </a>
-          </div>
-        </div>
-      ))}
-    </div>
+    <>
+      <ul>
+        {category.map((item, index) => (
+          <li key={"cat" + item + index}>
+            <input
+              type="checkbox"
+              name="categoryRadio"
+              id={item}
+              checked={item === selectedCategoryRadio}
+              onChange={() => checkboxChange(item)}
+            />
+            <label htmlFor={item}> {item} </label>
+          </li>
+        ))}
+      </ul>
+      <div className="containerRealization">
+        {arrayWebSiteRealization
+          .filter(
+            (item) =>
+              selectedCategoryRadio === "" ||
+              item.category.includes(selectedCategoryRadio)
+          )
+          .map((realization) => (
+            <div className="listContainerItemReal" key={realization.id}>
+              <div className="textItemReal">
+                <h3> {realization.title} </h3>
+                <a
+                  className="btnRealization"
+                  href={realization.webSite}
+                  target="_bank"
+                >
+                  Visiter le site
+                </a>
+              </div>
+              <img src={realization.imgSrc} alt={realization.alt} />
+            </div>
+          ))}
+      </div>
+    </>
   );
 };
 

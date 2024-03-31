@@ -8,7 +8,7 @@ const Realization = () => {
   return (
     <>
       <NavBar />
-      <main>
+      <main className="titleRealization">
         <h2>nos réalisations</h2>
         <p>
           Communiquer, c'est plaire, orienter l'information, être concis et

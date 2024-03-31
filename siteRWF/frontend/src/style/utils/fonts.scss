@@ -29,7 +29,8 @@ body,
 
 .swiperSlideText h2,
 .swiperSlideText h3,
-.textProject {
+.textProject,
+.titleRealization h2 {
   font-family: "designer regular";
   font-weight: bold;
 }
@@ -40,7 +41,8 @@ body {
   font-size: 14px;
 }
 
-.swiperSlideText h2 {
+.swiperSlideText h2,
+.titleRealization h2 {
   font-size: calc(3vw + 3vh);
 }
 
@@ -52,14 +54,23 @@ body {
   font-size: calc(1.2vw + 1.2vh);
 }
 
+.textItemReal a {
+  font-size: 0.8em;
+}
+
 .skill h4 {
   font-size: 1.2em;
+}
+
+.textItemReal h3 {
+  font-size: 1.3em;
 }
 
 //---- FONT WEIGHT ----//
 
 .skill h4,
-.skill button {
+.skill button,
+.textItemReal a {
   font-weight: bold;
 }
 
@@ -70,7 +81,10 @@ body {
 //---- TEXT ALIGN ----//
 
 .containerFooter h2,
-.skill p {
+.containerTextItemRealization p,
+.skill p,
+.textItemReal,
+.titleRealization {
   text-align: center;
 }
 
@@ -83,6 +97,7 @@ a {
 //---- TEXT TRANSFORM ----//
 
 .containerFooter h2,
-.skill h4 {
+.skill h4,
+.titleRealization h2 {
   text-transform: uppercase;
 }

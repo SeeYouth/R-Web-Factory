@@ -12,7 +12,6 @@ import {
 } from "../assets/utils/variable";
 
 const Footer = () => {
-  console.log(arrayInterest);
   return (
     <footer>
       <div className="containerFooter">
