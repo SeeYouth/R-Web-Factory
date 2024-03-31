@@ -100,3 +100,11 @@ export const linkAddInfoContact        = "Contact"
 export const linkAddInfoLegalNotice    = "Mentions légales"
 export const linkAddInfoTCU            = "Conditions générales d'utilisation"
 export const linkAddInfoPrivacy        = "Politique de confidentialité"
+
+export const arrayAddInfo              = [
+                                          linkAddInfoOnlineQuote,
+                                          linkAddInfoContact,
+                                          linkAddInfoLegalNotice,
+                                          linkAddInfoTCU,
+                                          linkAddInfoPrivacy
+                                        ]
