@@ -50,7 +50,7 @@ const Footer = () => {
             <h2>{section.title}</h2>
             <ul className="listLinkFooter">
               {section.array.map((item, index) => (
-                <li key={item + index}>{item}</li>
+                <li key={"footer" + index}>{item}</li>
               ))}
             </ul>
           </div>

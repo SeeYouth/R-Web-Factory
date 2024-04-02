@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 //------------------------//
 //-------- FOOTER --------//
 //------------------------//
@@ -24,64 +26,39 @@ export const additionalInformation    = "Information complémentaire";
 
 //---- CREATE WEBSITE ----//
 
-export const textCreateProject        = "Gestion de projet"
-export const textCreateWebdesign      = "Webdesign"
-export const textCreateVisual         = "Identité Visuelle"
-export const textCreateDevelopment    = "Développement"
-export const textCreateIntégration    = "Intégration"
-export const textCreateHosting        = "Hébergement"
-export const textCreateWebMarket      = "Webmarketing"
-export const textCreateSeo            = "Référencement naturel"
-export const textCreateEmail          = "E-Mailing"
-export const textCreateService        = "Infogérance"
-
 export const arrayLiCreateWebsite     = [
-                                          textCreateProject,
-                                          textCreateWebdesign,
-                                          textCreateVisual,
-                                          textCreateDevelopment,
-                                          textCreateIntégration,
-                                          textCreateHosting,
-                                          textCreateWebMarket,
-                                          textCreateSeo,
-                                          textRwfEmail,
-                                          textCreateService
+                                          "Gestion de projet",
+                                          "Webdesign",
+                                          "Identité Visuelle",
+                                          "Développement",
+                                          "Intégration",
+                                          "Hébergement",
+                                          "Webmarketing",
+                                          "Référencement naturel",
+                                          "E-Mailing",
+                                          "Infogérance"
                                         ]
 
 //---- FIELD ACTIVITY ----//
 
-export const textFieldOnlineCommerce  = "Création de site e-commerce"
-export const textFieldInstitutional   = "Création de site institutionnel"
-export const textFieldShowcase        = "Création de site vitrine"
-export const textFieldCatalog         = "Création de site catalogue"
-export const textFieldRedesign        = "Refonte de site"
-export const textFieldResponsive      = "Responsive design"
-export const textFieldCms             = "création de site avec CMS"
-export const textFieldInterface       = "Interfaçage"
-
 export const arrayFieldActivity       = [
-                                          textFieldOnlineCommerce,
-                                          textFieldInstitutional,
-                                          textFieldShowcase,
-                                          textFieldCatalog,
-                                          textFieldRedesign,
-                                          textFieldResponsive,
-                                          textFieldCms,
-                                          textFieldInterface
+                                          "Création de site e-commerce",
+                                          "Création de site institutionnel",
+                                          "Création de site vitrine",
+                                          "Création de site catalogue",
+                                          "Refonte de site",
+                                          "Responsive design",
+                                          "création de site avec CMS",
+                                          "Interfaçage"
                                         ]
 
 //---- ADDITIONAL INFORMATION ----//
 
-export const linkAddInfoContact        = "Contact"
-export const linkAddInfoLegalNotice    = "Mentions légales"
-export const linkAddInfoTCU            = "Conditions générales d'utilisation"
-export const linkAddInfoPrivacy        = "Politique de confidentialité"
-
 export const arrayAddInfo              = [
-                                          linkAddInfoContact,
-                                          linkAddInfoLegalNotice,
-                                          linkAddInfoTCU,
-                                          linkAddInfoPrivacy
+                                          <Link to="/contact">Contact</Link>,
+                                          "Mentions légales",
+                                          "Conditions générales d'utilisation",
+                                          "Politique de confidentialité"
                                         ]
 
 //---- ARRAY LIST LI AND LINK ----//
