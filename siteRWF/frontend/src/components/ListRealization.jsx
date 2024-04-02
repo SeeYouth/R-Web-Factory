@@ -20,9 +20,9 @@ const ListRealization = () => {
 
   return (
     <>
-      <ul>
+      <ul className="containerCategoryRadio">
         {category.map((item, index) => (
-          <li key={"cat" + item + index}>
+          <li className="itemCategoryRadio" key={"cat" + item + index}>
             <input
               type="checkbox"
               name="categoryRadio"
@@ -31,6 +31,7 @@ const ListRealization = () => {
               onChange={() => checkboxChange(item)}
             />
             <label htmlFor={item}> {item} </label>
+            <div className="bgMenuAnimation"></div>
           </li>
         ))}
       </ul>

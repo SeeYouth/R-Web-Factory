@@ -52,6 +52,7 @@ footer,
 
 //---- CURSOR ----//
 
+.itemCategoryRadio label:hover,
 .navLink li:hover,
 .svgBtn:hover {
   cursor: pointer;
@@ -79,6 +80,10 @@ footer,
 
 .svgBtn {
   height: 1em;
+}
+
+.titleRealization {
+  min-height: 100vh;
 }
 
 //---- TRANSITION ----//
