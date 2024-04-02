@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
 import App from "./pages/App";
+import Contact from "./pages/Contact";
 import Realization from "./pages/Realization";
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/realization",
     element: <Realization />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
