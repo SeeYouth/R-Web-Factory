@@ -10,13 +10,11 @@
 @keyframes changeColor {
   0%,
   100% {
-    stroke: $primary-text-color;
-
-    color: $primary-text-color;
+    stroke: map-get($arrayColor, "black", "0");
+    color: map-get($arrayColor, "black", "0");
   }
   50% {
-    stroke: $main-link-text-color;
-
-    color: $main-link-text-color;
+    stroke: map-get($arrayColor, "green", "0");
+    color: map-get($arrayColor, "green", "0");
   }
 }

@@ -1,59 +1,8 @@
-//---- BG COLOR ----//
-
-body {
-  background-color: $main-bg-color;
-}
-
-footer,
-.socialBar {
-  background-color: $secondary-bg-color;
-}
-
-.textItemReal,
-.textItemReal a {
-  background-color: $secondary-bg-color-trans;
-}
-
-//---- COLOR ----//
-
-.blue {
-  color: $firstColorFlag;
-}
-
-.red {
-  color: $secondColorFlag;
-}
-
-.logoRwf,
-.navLink li {
-  color: $primary-text-color;
-}
-
-.swiperSlideText button,
-.swiperSlideText h2,
-.swiperSlideText h3 {
-  color: $main-link-text-color;
-}
-
-footer,
-.listLinkFooter li,
-.listLinkFooter a:hover,
-.svgBtn:hover,
-.textItemReal {
-  color: $main-link-text-color-hover;
-}
-
-.listLinkFooter a,
-.navLink li:hover,
-.svgBtn,
-.textItemReal a {
-  color: $main-link-text-color;
-}
-
 //---- CURSOR ----//
 
 .itemCategoryRadio label:hover,
 .navLink li:hover,
+.skillContainer button,
 .svgBtn:hover {
   cursor: pointer;
 }
@@ -68,6 +17,10 @@ footer,
 
 .logoRwf {
   height: 100px;
+}
+
+.dataIconSvg {
+  height: 140px;
 }
 
 .containerSvg {
@@ -101,6 +54,7 @@ footer,
 
 .containerItemReal img,
 .listContainerItemReal img,
+.swiperContainer,
 .textItemReal {
   width: 100%;
 }

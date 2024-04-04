@@ -1,0 +1,38 @@
+.containerFormContact {
+  margin: 30px auto;
+  padding: 30px 0;
+  width: 100vw;
+  max-width: 1024px;
+
+  .horizontalSlider {
+    width: 100%;
+    margin: 10px 5px;
+
+    .budgetTrack {
+      top: 20px;
+      height: 10px;
+    }
+
+    .budgetThumb {
+      font-weight: bold;
+      padding: 15px;
+      color: map-get($arrayColor, "green", "0");
+      cursor: pointer;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border: 2px solid map-get($arrayColor, "green", "0");
+      outline: 1px solid transparent;
+
+      &:focus {
+        outline: 1px solid map-get($arrayColor, "black", "1");
+      }
+    }
+
+    .budgetTrack-0,
+    .budgetTrack-1,
+    .budgetTrack-2,
+    .budgetThumb {
+      transition: background-color 0.2s ease-out, outline 0.2s ease-out;
+    }
+  }
+}

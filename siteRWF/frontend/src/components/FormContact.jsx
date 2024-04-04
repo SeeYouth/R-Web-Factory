@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useState } from "react";
 
-import ReactSlider from 'react-slider';
+import ReactSlider from "react-slider";
 
 import {
   arrayInpRadio,
   arrayInpText,
-} from '../assets/utils/VariableFormContact';
+} from "../assets/utils/VariableFormContact";
 
 const FormContact = () => {
-  // const [value, setValue] = useState([0, 100]);
-  // const handleChange = (value) => {
-  //   setValue(value);
-  // };
-  console.log(arrayInpText[0].labelText);
+  const [value, setValue] = useState([500, 30000]);
+  const handleChange = (value) => {
+    setValue(value);
+  };
+  function formatBudget(value) {
+    return value.toLocaleString("fr-FR", {
+      style: "currency",
+      currency: "EUR",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    });
+  }
+
+  // console.log(formatBudget());
+
   return (
-    <main>
+    <main className="containerFormContact">
       <h2>Vous avez un projet de création de site internet ?</h2>
       <p>Contactez-nous !</p>
       <form method="post">
@@ -33,26 +43,22 @@ const FormContact = () => {
           </div>
         ))}
         <ReactSlider
-          className="horizontal-slider"
-          thumbClassName="example-thumb"
-          trackClassName="example-track"
-          defaultValue={[0, 100]}
+          className="horizontalSlider"
+          thumbClassName="budgetThumb"
+          trackClassName="budgetTrack"
+          defaultValue={value}
+          onChange={handleChange}
           ariaLabel={["Lower thumb", "Upper thumb"]}
           ariaValuetext={(state) => `Thumb value ${state.valueNow}`}
-          renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
+          renderThumb={(props, state) => (
+            <div {...props}>{formatBudget(state.valueNow)}</div>
+          )}
           pearling
-          minDistance={10}
+          step={100}
+          minDistance={2500}
+          min={500}
+          max={30000}
         />
-        {/* <ReactSlider
-          className="horizontal-slider"
-          marks
-          markClassName="example-mark"
-          min={0}
-          max={9}
-          thumbClassName="example-thumb"
-          trackClassName="example-track"
-          renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
-        /> */}
       </form>
     </main>
   );
