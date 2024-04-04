@@ -78,3 +78,12 @@ export const arrayInterest             = [
                                           }
                                         ]
 
+export const category                 = [
+                                          "Blog",
+                                          "E-commerce",
+                                          "Institutionnel",
+                                          "Site Catalogue",
+                                          "Site Vitrine",
+                                        ];
+
+

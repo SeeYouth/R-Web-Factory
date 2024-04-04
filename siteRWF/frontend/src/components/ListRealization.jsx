@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 
 import { arrayWebSiteRealization } from "../assets/utils/variableRealization";
+import { category } from "../assets/utils/variable";
 
 const ListRealization = () => {
   const [selectedCategoryRadio, setSelectedCategoryRadio] = useState("");
-  const category = [
-    "Blog",
-    "E-commerce",
-    "Institutionnel",
-    "Site Catalogue",
-    "Site Vitrine",
-  ];
 
   const checkboxChange = (checkboxId) => {
     setSelectedCategoryRadio((selected) =>
