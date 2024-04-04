@@ -3,12 +3,14 @@
 export const arrayInpText   = [
                                 [
                                   {
+                                    id: "inpCompanyContact",
                                     inputText: (
                                       <input type="text" name="company" id="company" placeholder="Société" />
                                     ),
                                     labelText: <label htmlFor="company">Société</label>,
                                   },
                                   {
+                                    id: "inpWebsiteContact",
                                     inputText: (
                                       <input
                                         type="text"
@@ -26,12 +28,14 @@ export const arrayInpText   = [
                                 ],
                                 [
                                   {
+                                    id: "inpNameContact",
                                     inputText: (
                                       <input type="text" name="name" id="name" placeholder="Nom :*" />
                                     ),
                                     labelText: <label htmlFor="name">Nom</label>,
                                   },
                                   {
+                                    id: "inpFirstnameContact",
                                     inputText: (
                                       <input
                                         type="text"
@@ -49,13 +53,25 @@ export const arrayInpText   = [
 
 export const arrayInpRadio  = [
                                 [
-                                  "Mr.",
-                                  "Mme",
-                                  "Mlle",
-                                  "Ne se prononce pas"
+                                  {
+                                    id: "TextInputMr",
+                                    textInputRadio:"Mr."
+                                  },
+                                  {
+                                    id: "TextInputMlle",
+                                    textInputRadio:"Mlle."
+                                  },
+                                  {
+                                    id: "TextInputMme",
+                                    textInputRadio:"Mme."
+                                  },
+                                  {
+                                    id: "TextInputNspp",
+                                    textInputRadio:"Ne se prononce pas"
+                                  },
                                 ],
-                                [
-                                  "oui",
-                                  "non"
-                                ]
+                                // [
+                                //   "oui",
+                                //   "non"
+                                // ]
                               ]

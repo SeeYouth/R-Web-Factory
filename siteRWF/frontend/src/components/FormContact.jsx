@@ -1,33 +1,36 @@
-import React from "react";
+import React from 'react';
 
-import ReactSlider from "react-slider";
+import ReactSlider from 'react-slider';
 
 import {
   arrayInpRadio,
   arrayInpText,
-} from "../assets/utils/VariableFormContact";
+} from '../assets/utils/VariableFormContact';
 
 const FormContact = () => {
   // const [value, setValue] = useState([0, 100]);
   // const handleChange = (value) => {
   //   setValue(value);
   // };
+  console.log(arrayInpText[0].labelText);
   return (
     <main>
       <h2>Vous avez un projet de création de site internet ?</h2>
       <p>Contactez-nous !</p>
       <form method="post">
-        {arrayInpText[0].map((compagny) => (
-          <>
-            {compagny.labelText}
-            {compagny.inputText}
-          </>
+        {arrayInpText[0].map((company) => (
+          <div key={company.id}>
+            {company.labelText}
+            {company.inputText}
+          </div>
         ))}
         {arrayInpRadio[0].map((civility) => (
-          <>
-            <label htmlFor={civility}>{civility}</label>
-            <input type="radio" name={civility} id={civility} />
-          </>
+          <div key={civility.id}>
+            <label htmlFor={civility.textInputRadio}>
+              {civility.textInputRadio}
+            </label>
+            <input type="radio" name="civility" id={civility.textInputRadio} />
+          </div>
         ))}
         <ReactSlider
           className="horizontal-slider"
@@ -40,6 +43,16 @@ const FormContact = () => {
           pearling
           minDistance={10}
         />
+        {/* <ReactSlider
+          className="horizontal-slider"
+          marks
+          markClassName="example-mark"
+          min={0}
+          max={9}
+          thumbClassName="example-thumb"
+          trackClassName="example-track"
+          renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
+        /> */}
       </form>
     </main>
   );
