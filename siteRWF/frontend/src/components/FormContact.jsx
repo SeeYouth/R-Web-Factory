@@ -6,6 +6,7 @@ import {
   arrayInpRadio,
   arrayInpText,
 } from "../assets/utils/VariableFormContact";
+import { category } from "../assets/utils/variable";
 
 const FormContact = () => {
   const [value, setValue] = useState([500, 30000]);
@@ -21,12 +22,14 @@ const FormContact = () => {
     });
   }
 
-  // console.log(formatBudget());
+  console.log("log useState value", value);
 
   return (
     <main className="containerFormContact">
-      <h2>Vous avez un projet de création de site internet ?</h2>
-      <p>Contactez-nous !</p>
+      <h2>
+        Pour votre avenir numérique <br />
+        C'est ici
+      </h2>
       <form method="post">
         {arrayInpText[0].map((company) => (
           <div key={company.id}>
@@ -34,12 +37,17 @@ const FormContact = () => {
             {company.inputText}
           </div>
         ))}
-        {arrayInpRadio[0].map((civility) => (
-          <div key={civility.id}>
-            <label htmlFor={civility.textInputRadio}>
-              {civility.textInputRadio}
-            </label>
-            <input type="radio" name="civility" id={civility.textInputRadio} />
+        {arrayInpRadio[0].map((civility, index) => (
+          <div key={"civility" + civility + index}>
+            <label htmlFor={civility}>{civility}</label>
+            <input type="radio" name="civility" id={civility} />
+          </div>
+        ))}
+        <h3>Quel style de projet avez-vous imaginé ?</h3>
+        {category.map((item, index) => (
+          <div key={"InpRadio" + item + index}>
+            <label htmlFor={item}> {item} </label>
+            <input type="radio" name="category" id={item} />
           </div>
         ))}
         <ReactSlider
@@ -59,6 +67,20 @@ const FormContact = () => {
           min={500}
           max={30000}
         />
+        <h3>Avez-vous déjà votre cahier des charges ?</h3>
+        {arrayInpRadio[1].map((item, index) => (
+          <div key={"cdc" + item + index}>
+            <label htmlFor={item}>{item}</label>
+            <input type="radio" name="cdc" id={item} />
+          </div>
+        ))}
+        <textarea
+          name="explicationProject"
+          id="explicationProject"
+          cols="30"
+          rows="10"
+          placeholder="Expliquez-nous en quelques lignes votre rêve"
+        ></textarea>
       </form>
     </main>
   );

@@ -53,31 +53,13 @@ export const arrayInpText = [
 
 export const arrayInpRadio = [
                               [
-                                {
-                                  id: "TextInputMr",
-                                  textInputRadio: "Mr.",
-                                },
-                                {
-                                  id: "TextInputMlle",
-                                  textInputRadio: "Mlle.",
-                                },
-                                {
-                                  id: "TextInputMme",
-                                  textInputRadio: "Mme.",
-                                },
-                                {
-                                  id: "TextInputNspp",
-                                  textInputRadio: "Ne se prononce pas",
-                                },
+                                "Mr.",
+                                "Mlle.",
+                                "Mme.",
+                                "Ne se prononce pas",
                               ],
                               [
-                                {
-                                  id: "TextInputYes",
-                                  textInputRadio: "oui",
-                                },
-                                {
-                                  id: "TextInputNo",
-                                  textInputRadio: "non",
-                                },
+                                "oui",
+                                "non",
                               ],
                             ];
