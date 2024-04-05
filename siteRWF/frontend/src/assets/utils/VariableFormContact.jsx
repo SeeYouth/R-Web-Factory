@@ -7,7 +7,6 @@ export const arrayInpText = [
                                   inputText: (
                                     <input type="text" name="company" id="company" placeholder="Société" />
                                   ),
-                                  labelText: <label htmlFor="company">Société</label>,
                                 },
                                 {
                                   id: "inpWebsiteContact",
@@ -18,12 +17,7 @@ export const arrayInpText = [
                                       id="websiteAlready"
                                       placeholder="Possédez vous un site internet ou un domaine ?"
                                     />
-                                  ),
-                                  labelText: (
-                                    <label htmlFor="websiteAlready">
-                                      Possédez vous un site internet ou un domaine ?
-                                    </label>
-                                  ),
+                                  )
                                 },
                               ],
                               [

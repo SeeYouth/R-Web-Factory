@@ -32,10 +32,7 @@ const FormContact = () => {
       </h2>
       <form method="post">
         {arrayInpText[0].map((company) => (
-          <div key={company.id}>
-            {company.labelText}
-            {company.inputText}
-          </div>
+          <div key={company.id}>{company.inputText}</div>
         ))}
         {arrayInpRadio[0].map((civility, index) => (
           <div key={"civility" + civility + index}>
