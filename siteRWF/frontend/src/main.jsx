@@ -1,13 +1,16 @@
-import "./index.scss";
+import './index.scss';
 
-import React from "react";
+import React from 'react';
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 
-import App from "./pages/App";
-import Contact from "./pages/Contact";
-import Realization from "./pages/Realization";
+import App from './pages/App';
+import Contact from './pages/Contact';
+import Realization from './pages/Realization';
 
 const router = createBrowserRouter([
   {
