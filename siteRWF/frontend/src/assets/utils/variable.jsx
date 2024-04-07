@@ -1,4 +1,7 @@
-import { Link } from 'react-router-dom';
+import Gear from '../img/svg/gear';
+import SvgDataIcon from '../img/svg/SvgDataIcon';
+import SvgGraphWebMarketing from '../img/svg/SvgGraphWebMarketing';
+import SvgPenTools from '../img/svg/SvgPenTools';
 
 //------------------------//
 //-------- FOOTER --------//
@@ -55,7 +58,7 @@ export const arrayFieldActivity       = [
 //---- ADDITIONAL INFORMATION ----//
 
 export const arrayAddInfo              = [
-                                          <Link to="/contact">Contact</Link>,
+                                          "Contact",
                                           "Mentions légales",
                                           "Conditions générales d'utilisation",
                                           "Politique de confidentialité"
@@ -110,5 +113,28 @@ export const slider = [
     imgSrc: "/img/webp/coworkingSpaceRWF/coworkingSpace-RWF-1.webp",
     imgSrcSet: "/img/jpg/coworkingSpaceRWF/coworkingSpace-RWF-1.jpg",
     alt: "Photo de l'espace de coworking de Rural Web Factory"
+  }
+]
+
+export const infoRwf = [
+  {
+    svg: <SvgDataIcon />,
+    h2: "hébergement",
+    p: "Notre savoir-faire en hébergement nous permet de vous conseiller et ainsi concevoir des projets à fort trafic.",
+  },
+  {
+    svg: <Gear />,
+    h2: "développement web",
+    p: "Méthodes, rigueur et réactivité pour réaliser et suivre votre projet de site internet.",
+  },
+  {
+    svg: <SvgPenTools />,
+    h2: "création graphique",
+    p: "Création online ou offline, nous réalisons les projets graphiques qui reflètent votre image.",
+  },
+  {
+    svg: <SvgGraphWebMarketing />,
+    h2: "web marketing",
+    p: "Rentabilisez votre site web grâce au référencement naturel, à l'emailing ou d'autre actions de création de trafic.",
   }
 ]

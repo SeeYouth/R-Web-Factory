@@ -44,7 +44,7 @@ npm run dev
 
 Les performances du site ont été évaluées à l'aide de divers outils. Les résultats seront ajoutés ci-dessous pour référence :
 
-- **YellowLab** : _Résultats à venir_
+- [**YellowLab**](https://yellowlab.tools/result/gv12ucepwk)
 - **PageSpeed Insights** : _Résultats à venir_
 - **GTmetrix** : _Résultats à venir_
 - [**W3C Validator HTML **](https://validator.w3.org/nu/?doc=https%3A%2F%2Fccp.jsi-webservice.fr%2F)
