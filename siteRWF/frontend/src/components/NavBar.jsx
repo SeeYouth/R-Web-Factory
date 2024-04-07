@@ -23,6 +23,12 @@ const NavBar = () => {
         <li>{LinkedInLogo}</li>
       </ul>
       <ul className="navLink">
+        <li className="navLinkMenu">
+          <Link to="/realization" className="navLinkMenu">
+            Nos réalisations
+            <div className="bgMenuAnimation"></div>
+          </Link>
+        </li>
         <Link to="/realization">
           <li className="navLinkMenu">
             Nos réalisations

@@ -2,8 +2,6 @@ export const Xlogo = (
   <svg
     className="svgBtn"
     fill="currentColor"
-    // width="300"
-    // height="271"
     viewBox="0 0 300 271"
     xmlns="http://www.w3.org/2000/svg"
   >
