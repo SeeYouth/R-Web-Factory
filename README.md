@@ -47,8 +47,8 @@ Les performances du site ont été évaluées à l'aide de divers outils. Les r�
 - **YellowLab** : _Résultats à venir_
 - **PageSpeed Insights** : _Résultats à venir_
 - **GTmetrix** : _Résultats à venir_
-- [**W3C Validator (HTML)**(]https://validator.w3.org/nu/?doc=https%3A%2F%2Fccp.jsi-webservice.fr%2F)
-- [**W3C Validator (CSS)**](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fccp.jsi-webservice.fr%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
+- [**W3C Validator HTML **](https://validator.w3.org/nu/?doc=https%3A%2F%2Fccp.jsi-webservice.fr%2F)
+- [**W3C Validator CSS **](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fccp.jsi-webservice.fr%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
 
 ## Finalité du projet
 
