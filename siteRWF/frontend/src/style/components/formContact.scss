@@ -37,42 +37,47 @@
 
   form {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     .styleForm {
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: row wrap;
       input[type="radio"] {
         display: none;
       }
-      // input[type="radio"] + label {
-      //   background-color: black;
-      // }
 
-      // input[type="radio"] + label {
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: center;
-      //   padding: 10px 15px;
-      //   border: 1px solid transparent;
-      //   background-color: transparent;
-      //   transition: border 0.2s ease-out, background-color 0.2s ease-out;
-      // }
+      .styleCat {
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px 2px;
+        border: 1px solid black;
+      }
 
       input[type="radio"] + label {
-        border: 3px solid map-get($arrayColor, "green", "0");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 4);
         height: 50px;
         flex-grow: 1;
         padding: 0 5px;
+        margin: 3px;
         user-select: none;
         font-size: 0.8em;
+        @include buttonStyle(20px, 3px);
       }
 
-      input[type="radio"]:checked + label,
-      input[type="radio"]:hover + label {
-        background-color: map-get($arrayColor, "black", "1");
-        color: map-get($arrayColor, "green", "0");
+      input[type="radio"]:checked + label {
+        background-color: map-get($arrayColor, "green", "0");
+        color: map-get($arrayColor, "black", "1");
+      }
+
+      input[type="text"] {
+        width: 100%;
+        height: 50px;
+        margin: 5px 2px;
       }
 
       textarea {

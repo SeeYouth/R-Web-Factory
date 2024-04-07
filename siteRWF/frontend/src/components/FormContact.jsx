@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import ReactSlider from "react-slider";
+import ReactSlider from 'react-slider';
 
 import {
   arrayInpRadio,
   arrayInpText,
-} from "../assets/utils/VariableFormContact";
-import { category } from "../assets/utils/variable";
+} from '../assets/utils/VariableFormContact';
+import { category } from '../assets/utils/variable';
 
 const FormContact = () => {
   const [value, setValue] = useState([500, 30000]);
@@ -22,8 +22,6 @@ const FormContact = () => {
     });
   }
 
-  console.log("log useState value", value);
-
   return (
     <main className="containerFormContact">
       <h2>
@@ -37,12 +35,17 @@ const FormContact = () => {
               {company.inputText}
             </React.Fragment>
           ))}
+          <div className="styleCat">
           {arrayInpRadio[0].map((civility, index) => (
             <React.Fragment key={"civility" + civility + index}>
               <input type="radio" name="civility" id={civility} />
               <label htmlFor={civility}>{civility}</label>
             </React.Fragment>
           ))}
+          {arrayInpText[1].map((name) => (
+            <React.Fragment key={name.id}>{name.inputText}</React.Fragment>
+          ))}
+          </div>
         </fieldset>
         <fieldset className="styleForm">
           <h3>Quel style de projet avez-vous imaginé ?</h3>

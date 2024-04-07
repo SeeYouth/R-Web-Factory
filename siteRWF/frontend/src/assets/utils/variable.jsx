@@ -85,5 +85,3 @@ export const category                 = [
                                           "Site Catalogue",
                                           "Site Vitrine",
                                         ];
-
-

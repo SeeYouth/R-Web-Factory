@@ -19,11 +19,10 @@ const NavBar = () => {
         </li>
         <li>{Xlogo}</li>
         <li>{FacebookLogo}</li>
-        <li>{LinkedInLogo}</li>
         <li>{YtLogo}</li>
+        <li>{LinkedInLogo}</li>
       </ul>
       <ul className="navLink">
-        <li></li>
         <li>
           <Link to="/realization">Nos réalisations</Link>
         </li>

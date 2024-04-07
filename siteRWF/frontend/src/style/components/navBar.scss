@@ -1,4 +1,5 @@
 nav {
   position: relative;
   border-bottom: 3px solid map-get($arrayColor, "green", "0");
+  @include navigationStyle(20px);
 }

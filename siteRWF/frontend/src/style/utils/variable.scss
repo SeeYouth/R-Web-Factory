@@ -23,8 +23,9 @@ $arrayColor : (
     "1": #343434,
     "2": #343434be,
     "3": #000000a4,
-  )
-);
+    )
+    );
+    
 
 //---------------------------//
 //-------- ANIMATION --------//
@@ -35,3 +36,4 @@ $arrayColor : (
 $elt-number                : 8;
 $animation-duration        : 0.2s;
 $offset                    : $animation-duration * 1.6;
+
