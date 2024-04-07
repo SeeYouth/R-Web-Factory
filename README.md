@@ -12,6 +12,7 @@ Le projet vise à démontrer mes connaissances dans le développement web avec r
 
 - [**React**](https://fr.react.dev/) : Une bibliothèque JavaScript pour construire des interfaces utilisateur.
 - [**Vite** ](https://vitejs.dev/) : Un outil de build moderne qui offre une expérience de développement plus rapide.
+- [**SASS**](https://sass-lang.com/) : Un préprocesseur CSS qui permet d'écrire du CSS de façon plus dynamique.
 
 ### Bibliothèques
 
@@ -19,7 +20,6 @@ Différentes bibliothèque ont été utilisé
 
 - [**React-Router**](https://reactrouter.com/en/main) : Pour la navigation entre les pages
 - [**Swiper**](https://swiperjs.com/react) : Pour l'animation du slider sur la page d'accueil
-- [**SASS**](https://sass-lang.com/) : Un préprocesseur CSS qui permet d'écrire du CSS de façon plus dynamique.
 
 ## Installation
 
