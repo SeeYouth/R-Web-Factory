@@ -85,3 +85,30 @@ export const category                 = [
                                           "Site Catalogue",
                                           "Site Vitrine",
                                         ];
+
+export const slider = [
+  {
+    h2: "Agence de Communication Digital",
+    h3: "Développons votre business digital",
+    button: "Créons votre site ensemble",
+    imgSrc: "/img/webp/loungeRWF/lounge_rural_web_factory_0_5x.webp",
+    imgSrcSet: "/img/jpg/loungeRWF/lounge_rural_web_factory_0,5x.jpg",
+    alt: "Photo du salon de Rural Web Factory"
+  },
+  {
+    h2: "Agence de Conseil aux Entreprises",
+    h3: "Nous serons toujours à votre écoute",
+    button: "Prenons rendez-vous",
+    imgSrc: "/img/webp/briefRuralWebFactory/brief_Rural_Web_Factory.webp",
+    imgSrcSet: "/img/jpg/briefRuralWebFactory/brief_Rural_Web_Factory.jpg",
+    alt: "Photo d'une réunion faites avec un client de Rural Web Factory"
+  },
+  {
+    h2: "Espace de coWorking",
+    h3: "Présent même dans les échanges",
+    button: "Prenons rendez-vous",
+    imgSrc: "/img/webp/coworkingSpaceRWF/coworkingSpace-RWF-1.webp",
+    imgSrcSet: "/img/jpg/coworkingSpaceRWF/coworkingSpace-RWF-1.jpg",
+    alt: "Photo de l'espace de coworking de Rural Web Factory"
+  }
+]

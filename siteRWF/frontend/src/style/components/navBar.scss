@@ -12,7 +12,7 @@ nav {
       margin: 0 5px;
 
       @include bgAnimation(0);
-      display: block;
+      // display: block;
 
       &:after {
         display: block;
