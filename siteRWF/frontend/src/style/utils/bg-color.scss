@@ -1,0 +1,84 @@
+//---- BG COLOR ----//
+
+body {
+  background-color: map-get($arrayColor, "white", "0");
+}
+
+.budgetTrack-1,
+.itemCategoryRadio label:after {
+  background-color: map-get($arrayColor, "green", "0");
+}
+
+.budgetTrack-1:hover,
+.textItemReal a:hover {
+  background-color: map-get($arrayColor, "green", "1");
+}
+
+.bgMenuAnimation,
+.budgetThumb:hover,
+.budgetThumb:focus,
+.budgetTrack-0:hover,
+.budgetTrack-2:hover,
+footer,
+.infoRwf h2,
+.socialBar {
+  background-color: map-get($arrayColor, "black", "1");
+}
+
+.budgetThumb,
+.budgetTrack-0,
+.budgetTrack-2,
+.textItemReal,
+.textItemReal a {
+  background-color: map-get($arrayColor, "black", "2");
+}
+
+//---- COLOR ----//
+
+.infoRwf h2,
+footer,
+.listLinkFooter li,
+.listLinkFooter a:hover,
+.svgBtn:hover,
+.textItemReal {
+  color: map-get($arrayColor, "white", "0");
+}
+
+.blue {
+  color: map-get($arrayColor, "blue", "0");
+}
+
+.red {
+  color: map-get($arrayColor, "red", "0");
+}
+
+.budgetThumb,
+.colorLine,
+.gearColor,
+.green,
+.itemCategoryRadio label:hover,
+.listLinkFooter a,
+.navLink li:hover,
+.svgBtn,
+.swiperSlideText button,
+.swiperSlideText h2,
+.swiperSlideText h3,
+.textItemReal a {
+  color: map-get($arrayColor, "green", "0");
+}
+
+body,
+.logoRwf,
+.navLink li {
+  color: map-get($arrayColor, "black", "0");
+}
+
+.textItemReal a:hover {
+  color: map-get($arrayColor, "black", "1");
+}
+
+.navLinkMenu,
+.navLinkMenu:visited,
+.navLinkMenu:focus {
+  color: map-get($arrayColor, "black", "3");
+}
