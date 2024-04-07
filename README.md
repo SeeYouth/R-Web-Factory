@@ -1,6 +1,6 @@
-# Rural Seb Factory
+# Rural Web Factory
 
-Bienvenue sur la page GitHub du projet CCP1-Rural Seb Factory. Ce site web est conçu avec React, utilisant Vite pour une meilleure expérience de développement.
+Bienvenue sur la page GitHub du projet CCP1-Rural Web Factory. Ce site web est conçu avec React, utilisant Vite pour une meilleure expérience de développement.
 
 ## Aperçu
 
