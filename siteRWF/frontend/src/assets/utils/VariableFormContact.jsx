@@ -15,7 +15,7 @@ export const arrayInpText = [
                                       type="text"
                                       name="websiteAlready"
                                       id="websiteAlready"
-                                      placeholder="Possédez vous un site internet ou un domaine ?"
+                                      placeholder="Inscrivez-ici votre site internet ou domaine, si vous en possédez un."
                                     />
                                   )
                                 },
