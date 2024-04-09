@@ -44,8 +44,8 @@ npm run dev
 
 Les performances du site ont été évaluées à l'aide de divers outils. Les résultats seront ajoutés ci-dessous pour référence :
 
-- [**YellowLab**](https://yellowlab.tools/result/gv12ucepwk)
-- [**PageSpeed Insights**](https://pagespeed.web.dev/analysis/https-ccp-jsi-webservice-fr/k1w4gzexjk?utm_source=psi&utm_medium=redirect&form_factor=desktop)
+- [**YellowLab**](https://yellowlab.tools/result/gv3arz6ge6)
+- [**PageSpeed Insights**](https://pagespeed.web.dev/analysis/https-ccp-jsi-webservice-fr/7gpqemq3tk?utm_source=psi&utm_medium=redirect&form_factor=desktop)
 - [**W3C Validator HTML **](https://validator.w3.org/nu/?doc=https%3A%2F%2Fccp.jsi-webservice.fr%2F)
 - [**W3C Validator CSS **](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fccp.jsi-webservice.fr%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr)
 
